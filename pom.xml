@@ -7,7 +7,7 @@
   <properties>
     <scala.version>2.11.8</scala.version>
     <spark-version>2.3.0</spark-version>
-    <hadoop.version>2.7.4</hadoop.version>
+    <hadoop.version>3.1.1</hadoop.version>
     <!-- 使用自定义ES 版本 -->
     <elasticsearch.version>5.6.1</elasticsearch.version>
   </properties>
@@ -70,16 +70,31 @@
       <version>2.3.0</version>
     </dependency>
 
+
     <dependency>
       <groupId>org.apache.hbase</groupId>
       <artifactId>hbase-client</artifactId>
-      <version>1.4.0</version>
+      <version>2.0.0</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.hbase</groupId>
       <artifactId>hbase-common</artifactId>
-      <version>1.4.0</version>
+      <version>2.0.0</version>
+    </dependency>
+
+    <!-- Redis -->
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>2.9.0</version>
+    </dependency>
+
+    <!-- Phoenix -->
+    <dependency>
+    <groupId>org.apache.phoenix</groupId>
+    <artifactId>phoenix-spark</artifactId>
+      <version>RELEASE</version>
     </dependency>
 
     <dependency>
@@ -88,7 +103,7 @@
       <version>5.6.5</version>
     </dependency>
 
-    <!-- ES -->
+     <!-- ES -->
     <dependency>
       <groupId>org.elasticsearch.client</groupId>
       <artifactId>transport</artifactId>

@@ -15,9 +15,9 @@ public class ESClient {
 
         Settings setting = Settings.builder()
                 .put("cluster.name", "test")
-                .put("client.transport.sniff", true)
+                .put("client.transport.sniff", true) // 开启ES嗅探功能，确保集群连上多个节点
                 .build();
-
+        // 添加es的节点信息，可以添加1个或多个
         InetSocketTransportAddress master = new InetSocketTransportAddress(
                 InetAddress.getByName("localhost"),9300);
 

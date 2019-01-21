@@ -10,4 +10,4 @@ package com.dns.entity
   * @param ipVersion
   * @param message
   */
-case class DnsEntity(time: String, day: String, hour :String ,msgLeve: String, clientIp: String, requestAddress: String, ipVersion: String, message: String)
+case class DnsEntity(time: String, day: String, hour :String ,timestamp : BigDecimal ,msgLeve: String, clientIp: String, requestAddress: String, ipVersion: String, message: String)
